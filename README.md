@@ -82,4 +82,7 @@ Um alerta não significa necessariamente que ocorreu um ataque. O projeto não r
 
 ## Objetivo
 
-Projeto educacional desenvolvido como parte da minha jornada de aprendizado em Análise e Desenvolvimento de Sistemas, com foco em Python, automação e fundamentos de cibersegurança.
+Projeto educacional desenvolvido como parte da minha jornada de aprendizado em Análise e Desenvolvimento de Sistemas, com foco em Python, automação e fundamentos de cibersegurança. 
+## Prévia do painel
+
+![Painel de Segurança](painel-seguranca.png)
