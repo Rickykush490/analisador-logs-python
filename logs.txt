@@ -1,0 +1,11 @@
+
+INFO: Sistema iniciado.
+LOGIN: 192.168.1.10
+LOGIN: 192.168.1.20
+LOGIN: 192.168.1.10
+LOGIN: 192.168.1.30
+LOGIN: 192.168.1.10
+LOGIN: 192.168.1.20
+LOGIN: 192.168.1.10
+ERROR: Falha no sistema.
+WARNING: Tentativa de acesso suspeita.

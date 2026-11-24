@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório de Segurança</title>
+<style>
+body {
+    background: #101827;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    margin: 0;
+}
+.container { max-width: 1100px; margin: auto; }
+h1 { color: #60a5fa; }
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.metric { font-size: 30px; font-weight: bold; margin-top: 10px; }
+.info { color: #60a5fa; }
+.warning { color: #facc15; }
+.error { color: #f87171; }
+.ips { color: #4ade80; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #475569;
+}
+th { color: #60a5fa; }
+.alerta { color: #f87171; font-weight: bold; }
+.normal { color: #4ade80; }
+@media (max-width: 600px) {
+    body { padding: 15px; }
+    th, td { padding: 9px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Painel de Segurança</h1>
+<p>Relatório de análise de logs do sistema</p>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>Informações</h3>
+        <div class="metric info">1</div>
+    </div>
+    <div class="card">
+        <h3>Avisos</h3>
+        <div class="metric warning">1</div>
+    </div>
+    <div class="card">
+        <h3>Erros</h3>
+        <div class="metric error">1</div>
+    </div>
+    <div class="card">
+        <h3>IPs monitorados</h3>
+        <div class="metric ips">3</div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Resumo da análise</h2>
+    <p>Total de registros: 10</p>
+</div>
+
+<div class="card">
+    <h2>IP com mais tentativas</h2>
+    <p>192.168.1.10: 4 tentativa(s)</p>
+</div>
+
+<div class="card">
+    <h2>Atividade por endereço IP</h2>
+    <table>
+        <tr>
+            <th>Endereço IP</th>
+            <th>Tentativas</th>
+            <th>Situação</th>
+        </tr>
+        <tr><td>192.168.1.10</td><td>4</td><td class="alerta">Alerta</td></tr>
+<tr><td>192.168.1.20</td><td>2</td><td class="normal">Normal</td></tr>
+<tr><td>192.168.1.30</td><td>1</td><td class="normal">Normal</td></tr>
+    </table>
+</div>
+</div>
+</body>
+</html>
